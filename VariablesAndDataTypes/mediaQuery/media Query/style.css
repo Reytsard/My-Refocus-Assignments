@@ -1,0 +1,44 @@
+@media only screen and (min-width: 1312px){
+    .mobile{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    .PC{
+        display: block;
+    }
+}
+@media only screen and (min-width: 992px){
+    .mobile{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    .PC{
+        display: block;
+    }
+}
+@media only screen and (max-width: 992px){
+    .PC{
+        display: none;
+    }
+    .tablet{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
+}
+@media only screen and (max-width: 688px){
+    .PC{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+}

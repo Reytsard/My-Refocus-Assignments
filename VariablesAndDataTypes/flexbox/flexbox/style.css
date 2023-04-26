@@ -1,0 +1,17 @@
+.aquaDiv{
+    display: flex;
+    justify-content: center;
+}
+.bisqueDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bluevioletDiv{
+    display: flex;
+    justify-content: end;
+}
+.difPart{
+    display: flex;
+    flex-wrap: wrap;
+}
