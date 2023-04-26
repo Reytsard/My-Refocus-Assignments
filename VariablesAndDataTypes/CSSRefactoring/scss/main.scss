@@ -1,0 +1,81 @@
+@use 'variables';
+@use 'mixins';
+
+*{
+@include mixins.noPaddingMargin();
+}
+
+.container {
+padding: 50px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-template-rows: repeat(3, 1fr);
+gap: 50px;
+place-items: center;
+}
+
+.triangle-left {
+@include mixins.noWidthHeight();
+border-top: variables.$border-solid-transparent;
+border-bottom: variables.$border-solid-transparent;
+border-right: 100px solid variables.$blue;
+}
+
+.triangle-up {
+@include mixins.noWidthHeight();
+border-bottom: 100px solid orange;
+border-left: variables.$border-solid-transparent;
+border-right: variables.$border-solid-transparent;
+}
+
+.triangle-down {
+@include mixins.noWidthHeight();
+border-top: 100px solid red;
+border-left: variables.$border-solid-transparent;
+border-right: variables.$border-solid-transparent;
+}
+
+.triangle-right {
+@include mixins.noWidthHeight();
+border-top: variables.$border-solid-transparent;
+border-bottom: variables.$border-solid-transparent;
+border-left: 100px solid green;
+}
+
+.ellipse-horizontal {
+width: 180px;
+height: 90px;
+@include mixins.borderRadius50Percent();
+}
+
+.ellipse-vertical {
+width: 90px;
+height: 180px;
+@include mixins.borderRadius50Percent();
+}
+
+.rectangle-horizontal {
+width: 120px;
+height: 80px;
+}
+
+.rectangle-vertical {
+width: 80px;
+height: 120px;
+}
+
+.orange {
+background-color: variables.$orange;
+}
+
+.red {
+background-color: variables.$red;
+}
+
+.green {
+background-color: variables.$green;
+}
+
+.blue {
+background-color: variables.$blue;
+}
